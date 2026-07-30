@@ -18,25 +18,25 @@ Exploratory data analysis and clustering of the [Wine Reviews dataset](https://w
 
 **Price distribution** (bottles under $200):
 
-![Price distribution](images/price_distribution.png)
+![Price distribution](price_distribution.png)
 
 **Outlier removal** — boxplots of `price` by `points`, before and after IQR-based cleaning:
 
 | Before | After |
 |---|---|
-| ![Before](images/boxplot_before_outlier_removal.png) | ![After](images/boxplot_after_outlier_removal.png) |
+| ![Before](boxplot_before_outlier_removal.png) | ![After](boxplot_after_outlier_removal.png) |
 
 **Hierarchical clustering** — dendrogram and complete-linkage clusters (3,000-row subsample):
 
-![Dendrogram](images/dendrogram.png)
-![Complete linkage clusters](images/hierarchical_complete_linkage.png)
+![Dendrogram](dendrogram.png)
+![Complete linkage clusters](hierarchical_complete_linkage.png)
 
 Single-linkage produced degenerate, chained clusters (a handful of outlier points split off while the rest stayed in one large cluster). Complete and average linkage gave more balanced groupings, though still sensitive to subsample size.
 
 **K-means** — elbow method and final clustering (full dataset, k=3):
 
-![Elbow method](images/elbow_method.png)
-![K-means clusters](images/kmeans_final_clusters.png)
+![Elbow method](elbow_method.png)
+![K-means clusters](kmeans_final_clusters.png)
 
 ## Conclusions
 
